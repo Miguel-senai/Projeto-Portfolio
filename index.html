@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="estilos/estilo.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="func.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2><span>P</span>ortfolio</h2>
+      </div>
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trabalhos">Projeto</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="apresento">
+          <h1 id="home">Opa, Eu sou Miguel</h1>
+          <h3>Eu sou um <span id="escrita"></span></h3>
+          <p>
+            Apresento a seguir uma seleção dos meus projetos, desenvolvidos com
+            dedicação e empenho. Espero que os considere bons e bem elaborados.
+          </p>
+        </div>
+
+        <div class="sonic_gif">
+          <img src="imagens/sonic_correndo.gif" alt="sonic correndo"/>
+        </div>
+      </div>
+
+      <div class="sobre">
+        <h2 id="sobre" class="sobre_titulo">Sobre mim</h2>
+        <p>
+          Atualmente, tenho 17 anos e estou cursando o técnico de
+          Desenvolvimento de Sistemas do SENAI. Eu comecei a me interessar com a programação no 1° ano do ensino médio, quando alguns amigos me apresentaram ela. Nesse site irei compatilhar os projetos que eu desenvolvi até agora com apenas html, css e javascript.
+        </p>
+      </div>
+
+      <div class="projetos">
+        <h2 id="trabalhos" class="projetos_titulo">Projetos</h2>
+      </div>
+
+      <div id="pedagio">
+        <div>
+          <h3>Controle Pedágio</h3>
+            <p>
+              Desenvolvimento de um site de pedágio funcional usando html, css e javascript.
+            </p>
+          <a href="https://miguel-senai.github.io/Projeto-Controle-Ped-gio/" target="_blank"><button class="butao_pedagio">Site<img class="seta" src="imagens/seta-direita.png"></button></a>
+        </div>
+        <img src="imagens/Captura de tela 2025-06-04 140533.png" alt="imagem de um controle de pedágio" class="img_pedagio"/>
+      </div>
+
+      <div id="salario">
+        <div>
+          <h3>Calculadora Salário Líquido</h3>
+            <p>
+              Desenvolvimento de uma calculadora, que calcula o salário usando html, css e javascript.
+            </p>
+          <a href="https://miguel-senai.github.io/Projeto-calculo-trabalhista/" target="_blank"><button class="butao_pedagio">Site<img class="seta" src="imagens/seta-direita.png"></button></a>
+        </div>
+        <img src="imagens/Captura de tela 2025-06-06 143620.png" alt="imagem de uma calculadora de salário" class="img_calculadora"/>
+      </div>
+
+      <div id="imc">
+        <div>
+          <h3>Calculadora IMC</h3>
+            <p>
+              Desenvolvimento de uma calculadora, que calcula o seu imc usando html, css e javascript.
+            </p>
+          <a href="https://miguel-senai.github.io/Calculadora-IMC/" target="_blank"><button class="butao_pedagio">Site<img class="seta" src="imagens/seta-direita.png"></button></a>
+        </div>
+        <img src="imagens/Captura de tela 2025-06-06 160351.png" alt="imagem de uma calculadora de salário" class="img_calculadora"/>
+      </div>
+
+      <div class="projetos">
+        <h2 id="contato" class="projetos_titulo">Contatos</h2>
+      </div>
+
+      <div id="contatos">
+        <div>
+          <h3>Contato</h3>
+          <p>(79)9 9856-5324</p>
+          <h3>E-mail</h3>
+          <p>miguel.feitosa@aluno.senai.br</p>
+          <h3>Localização</h3>
+          <p>Sergipe, Aracaju</p>
+        </div>
+
+        <div id="nome_email">
+          <h4>Nome</h4>
+          <input type="text">
+          <h4>E-mail</h4>
+          <input type="text">
+          <h4>Assunto</h4>
+          <input type="text">
+          <h4>Descrição</h4>
+          <textarea id="descricao" cols="30" rows="10"></textarea>
+          <button class="enviar">Enviar mensagem <img class="seta" src="imagens/seta-direita.png"></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

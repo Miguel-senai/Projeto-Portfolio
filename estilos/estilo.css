@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root {
+    --text-color: #f5f5f5;
+    --hover-color: #0099ec;
+    --bg-color: #1f282c;
+    --second-bg-color: #080808;
+    --big-font: 2.5rem;
+    --normal-font: 2rem;
+    --neon-box-shadow: 0 0 0.5rem rgb(18, 93, 255);
+}
+
+body{
+    background-color: var(--bg-color);  
+    color: var(--text-color);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--second-bg-color);
+    height: 80px;
+    padding: 0 8%;
+    box-shadow: var(--neon-box-shadow);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li{
+    font-size: 1.12rem;
+}
+
+nav ul li a:hover{
+    color: var(--hover-color);
+}
+
+a{
+    color: var(--text-color);
+}
+
+a :hover{
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+span{
+    color: rgb(0, 0, 241);
+}
+
+#escrita{
+    color: var(--hover-color);
+}
+
+main{
+    margin-top: 80px;
+}
+
+.container{
+    display: flex;
+}
+
+.apresento{
+    width: 400px;
+    margin-left: 15%;
+}
+
+.sonic_gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.sonic_gif img{
+    width: 150px;
+}
+
+.sobre{
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.sobre_titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.projetos{
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.projetos_titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.img_pedagio{
+    float: right;
+    width: 350px;
+}
+
+#pedagio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butao_pedagio{
+    width: 60px;
+    height: 35px;
+    background-color: #0099ec;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+#pedagio div{
+    width: 400px;
+    position: relative;
+}
+
+#pedagio div h3{
+    margin-bottom: 8px;
+}
+
+#pedagio div a{
+    position: absolute;
+    right: 50%;
+}
+
+button :hover{
+    cursor: pointer;
+}
+.seta{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+#salario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#salario div {
+    width: 400px;
+    position: relative;
+}
+
+#salario div h3{
+    margin-bottom: 8px;
+}
+
+#salario div a{
+    position: absolute;
+    right: 50%;
+}
+
+.img_calculadora{
+    float: right;
+    width: 350px;
+    height: 400px;
+}
+
+#imc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#imc div {
+    width: 400px;
+    position: relative;
+}
+
+#imc div h3{
+    margin-bottom: 8px;
+}
+
+#imc div a{
+    position: absolute;
+    right: 50%;
+}
+
+#contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#contatos div {
+    width: 400px;
+    position: relative;
+}
+
+#contatos div h3{
+    margin-bottom: 2px;
+}
+
+#contatos div p{
+    margin-bottom: 30px;
+}
+
+h4{
+    margin: 10px 0 10px 0;
+}
+
+input{
+    width: 280px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    align-self: start;
+}
+
+#nome_email{
+    float: right;
+}
+
+#descricao{
+    max-width: 280px;
+    max-height: 130px;
+    min-width: 280px;
+    min-height: 130px;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.enviar{
+    width: 120px;
+    height: 50px;
+    background-color: #0099ec;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+
+@media (max-width: 820px) {
+
+    nav{
+        padding-inline: 5%;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--bg-color);
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    nav ul li:first-child{
+        padding-top: 10px;
+    }
+
+    nav ul li:last-child{
+        padding-bottom: 10px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+}
